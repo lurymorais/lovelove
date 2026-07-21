@@ -3,38 +3,38 @@
 
     // ===== TRADUÇÕES =====
     const TRADUCOES = {
-        'pt': { texto: 'Me dá uma chance?', sim: 'SIM', nao: 'NÃO', nome: 'Português (Brasil)', tituloPagina: 'Me dá uma chance?' },
-        'en': { texto: 'Give me a chance?', sim: 'YES', nao: 'NO', nome: 'English', tituloPagina: 'Give me a chance?' },
-        'es': { texto: '¿Me das una oportunidad?', sim: 'SÍ', nao: 'NO', nome: 'Español', tituloPagina: '¿Me das una oportunidad?' },
-        'fr': { texto: 'Donne-moi une chance ?', sim: 'OUI', nao: 'NON', nome: 'Français', tituloPagina: 'Donne-moi une chance ?' },
-        'it': { texto: 'Mi dai una possibilità?', sim: 'SÌ', nao: 'NO', nome: 'Italiano', tituloPagina: 'Mi dai una possibilità?' },
-        'ro': { texto: 'Îmi dai o șansă?', sim: 'DA', nao: 'NU', nome: 'Română', tituloPagina: 'Îmi dai o șansă?' },
-        'de': { texto: 'Gibst du mir eine Chance?', sim: 'JA', nao: 'NEIN', nome: 'Deutsch', tituloPagina: 'Gibst du mir eine Chance?' },
-        'nl': { texto: 'Geef je me een kans?', sim: 'JA', nao: 'NEE', nome: 'Nederlands', tituloPagina: 'Geef je me een kans?' },
-        'ru': { texto: 'Дашь мне шанс?', sim: 'ДА', nao: 'НЕТ', nome: 'Русский', tituloPagina: 'Дашь мне шанс?' },
-        'uk': { texto: 'Даси мені шанс?', sim: 'ТАК', nao: 'НІ', nome: 'Українська', tituloPagina: 'Даси мені шанс?' },
-        'pl': { texto: 'Dasz mi szansę?', sim: 'TAK', nao: 'NIE', nome: 'Polski', tituloPagina: 'Dasz mi szansę?' },
-        'cs': { texto: 'Dáš mi šanci?', sim: 'ANO', nao: 'NE', nome: 'Čeština', tituloPagina: 'Dáš mi šanci?' },
-        'bg': { texto: 'Ще ми дадеш ли шанс?', sim: 'ДА', nao: 'НЕ', nome: 'Български', tituloPagina: 'Ще ми дадеш ли шанс?' },
-        'hr': { texto: 'Daš mi šansu?', sim: 'DA', nao: 'NE', nome: 'Hrvatski', tituloPagina: 'Daš mi šansu?' },
-        'el': { texto: 'Μου δίνεις μια ευκαιρία;', sim: 'ΝΑΙ', nao: 'ΟΧΙ', nome: 'Ελληνικά', tituloPagina: 'Μου δίνεις μια ευκαιρία;' },
-        'ja': { texto: 'チャンスをくれない？', sim: 'はい', nao: 'いいえ', nome: '日本語', tituloPagina: 'チャンスをくれない？' },
-        'ko': { texto: '나한테 기회를 줄래?', sim: '네', nao: '아니오', nome: '한국어', tituloPagina: '나한테 기회를 줄래?' },
-        'zh-CN': { texto: '给我一个机会好吗？', sim: '好的', nao: '不要', nome: '简体中文', tituloPagina: '给我一个机会好吗？' },
-        'zh-TW': { texto: '畀個機會我好嗎？', sim: '好', nao: '不要', nome: '繁體中文', tituloPagina: '畀個機會我好嗎？' },
-        'vi': { texto: 'Cho anh/em một cơ hội nhé?', sim: 'CÓ', nao: 'KHÔNG', nome: 'Tiếng Việt', tituloPagina: 'Cho anh/em một cơ hội nhé?' },
-        'th': { texto: 'ให้โอกาสฉันหน่อยได้ไหม?', sim: 'ใช่', nao: 'ไม่', nome: 'ไทย', tituloPagina: 'ให้โอกาสฉันหน่อยได้ไหม?' },
-        'tl': { texto: 'Bigyan mo naman ako ng pagkakataon?', sim: 'OO', nao: 'HINDI', nome: 'Tagalog', tituloPagina: 'Bigyan mo naman ako ng pagkakataon?' },
-        'hi': { texto: 'क्या मुझे एक मौका दोगे?', sim: 'हाँ', nao: 'नहीं', nome: 'हिन्दी', tituloPagina: 'क्या मुझे एक मौका दोगे?' },
-        'ar': { texto: 'ممكن تديني فرصة؟', sim: 'نعم', nao: 'لا', nome: 'العربية', tituloPagina: 'ممكن تديني فرصة؟' },
-        'he': { texto: 'תיתן/תתני לי הזדמנות?', sim: 'כן', nao: 'לא', nome: 'עברית', tituloPagina: 'תיתן/תתני לי הזדמנות?' },
-        'tr': { texto: 'Bana bir şans verir misin?', sim: 'EVET', nao: 'HAYIR', nome: 'Türkçe', tituloPagina: 'Bana bir şans verir misin?' },
-        'fa': { texto: 'یه فرصت بهم میدی؟', sim: 'بله', nao: 'نه', nome: 'فارسی', tituloPagina: 'یه فرصت بهم میدی؟' },
-        'sw': { texto: 'Unipe nafasi?', sim: 'NDIYO', nao: 'HAPANA', nome: 'Kiswahili', tituloPagina: 'Unipe nafasi?' },
-        'sv': { texto: 'Ger du mig en chans?', sim: 'JA', nao: 'NEJ', nome: 'Svenska', tituloPagina: 'Ger du mig en chans?' },
-        'no': { texto: 'Gir du meg en sjanse?', sim: 'JA', nao: 'NEI', nome: 'Norsk', tituloPagina: 'Gir du meg en sjanse?' },
-        'da': { texto: 'Giver du mig en chance?', sim: 'JA', nao: 'NEJ', nome: 'Dansk', tituloPagina: 'Giver du mig en chance?' },
-        'fi': { texto: 'Annatko minulle mahdollisuuden?', sim: 'KYLLÄ', nao: 'EI', nome: 'Suomi', tituloPagina: 'Annatko minulle mahdollisuuden?' }
+        'pt': { texto: 'Me dá uma chance?', sim: 'SIM', nao: 'NÃO', nome: 'Português (Brasil)', tituloPagina: 'Me dá uma chance?', descricao: 'Uma página para os românticos.', palavrasChave: 'romântico, interativo, desafio, emojis, divertido, amor' },
+        'en': { texto: 'Give me a chance?', sim: 'YES', nao: 'NO', nome: 'English', tituloPagina: 'Give me a chance?', descricao: 'A page for romantics.', palavrasChave: 'romantic, interactive, challenge, emojis, fun, love' },
+        'es': { texto: '¿Me das una oportunidad?', sim: 'SÍ', nao: 'NO', nome: 'Español', tituloPagina: '¿Me das una oportunidad?', descricao: 'Una página para los románticos.', palavrasChave: 'romántico, interactivo, desafío, emojis, divertido, amor' },
+        'fr': { texto: 'Donne-moi une chance ?', sim: 'OUI', nao: 'NON', nome: 'Français', tituloPagina: 'Donne-moi une chance ?', descricao: 'Une page pour les romantiques.', palavrasChave: 'romantique, interactif, défi, emojis, amusant, amour' },
+        'it': { texto: 'Mi dai una possibilità?', sim: 'SÌ', nao: 'NO', nome: 'Italiano', tituloPagina: 'Mi dai una possibilità?', descricao: 'Una pagina per i romantici.', palavrasChave: 'romantico, interattivo, sfida, emojis, divertente, amore' },
+        'ro': { texto: 'Îmi dai o șansă?', sim: 'DA', nao: 'NU', nome: 'Română', tituloPagina: 'Îmi dai o șansă?', descricao: 'O pagină pentru romantici.', palavrasChave: 'romantic, interactiv, provocare, emoji, distractiv, iubire' },
+        'de': { texto: 'Gibst du mir eine Chance?', sim: 'JA', nao: 'NEIN', nome: 'Deutsch', tituloPagina: 'Gibst du mir eine Chance?', descricao: 'Eine Seite für Romantiker.', palavrasChave: 'romantisch, interaktiv, Herausforderung, Emojis, Spaß, Liebe' },
+        'nl': { texto: 'Geef je me een kans?', sim: 'JA', nao: 'NEE', nome: 'Nederlands', tituloPagina: 'Geef je me een kans?', descricao: 'Een pagina voor romantici.', palavrasChave: 'romantisch, interactief, uitdaging, emojis, leuk, liefde' },
+        'ru': { texto: 'Дашь мне шанс?', sim: 'ДА', nao: 'НЕТ', nome: 'Русский', tituloPagina: 'Дашь мне шанс?', descricao: 'Страница для романтиков.', palavrasChave: 'романтический, интерактивный, вызов, эмодзи, весело, любовь' },
+        'uk': { texto: 'Даси мені шанс?', sim: 'ТАК', nao: 'НІ', nome: 'Українська', tituloPagina: 'Даси мені шанс?', descricao: 'Сторінка для романтиків.', palavrasChave: 'романтичний, інтерактивний, виклик, емодзі, весело, кохання' },
+        'pl': { texto: 'Dasz mi szansę?', sim: 'TAK', nao: 'NIE', nome: 'Polski', tituloPagina: 'Dasz mi szansę?', descricao: 'Strona dla romantyków.', palavrasChave: 'romantyczny, interaktywny, wyzwanie, emoji, zabawa, miłość' },
+        'cs': { texto: 'Dáš mi šanci?', sim: 'ANO', nao: 'NE', nome: 'Čeština', tituloPagina: 'Dáš mi šanci?', descricao: 'Stránka pro romantiky.', palavrasChave: 'romantický, interaktivní, výzva, emodži, zábava, láska' },
+        'bg': { texto: 'Ще ми дадеш ли шанс?', sim: 'ДА', nao: 'НЕ', nome: 'Български', tituloPagina: 'Ще ми дадеш ли шанс?', descricao: 'Страница за романтици.', palavrasChave: 'романтичен, интерактивен, предизвикателство, емоджи, забавно, любов' },
+        'hr': { texto: 'Daš mi šansu?', sim: 'DA', nao: 'NE', nome: 'Hrvatski', tituloPagina: 'Daš mi šansu?', descricao: 'Stranica za romantike.', palavrasChave: 'romantičan, interaktivan, izazov, emojiji, zabavno, ljubav' },
+        'el': { texto: 'Μου δίνεις μια ευκαιρία;', sim: 'ΝΑΙ', nao: 'ΟΧΙ', nome: 'Ελληνικά', tituloPagina: 'Μου δίνεις μια ευκαιρία;', descricao: 'Μια σελίδα για ρομαντικούς.', palavrasChave: 'ρομαντικός, διαδραστικός, πρόκληση, emojis, διασκεδαστικό, αγάπη' },
+        'ja': { texto: 'チャンスをくれない？', sim: 'はい', nao: 'いいえ', nome: '日本語', tituloPagina: 'チャンスをくれない？', descricao: 'ロマンティックなページ。', palavrasChave: 'ロマンチック, インタラクティブ, チャレンジ, 絵文字, 楽しい, 愛' },
+        'ko': { texto: '나한테 기회를 줄래?', sim: '네', nao: '아니오', nome: '한국어', tituloPagina: '나한테 기회를 줄래?', descricao: '낭만적인 페이지.', palavrasChave: '낭만적인, 인터랙티브, 도전, 이모지, 재미있는, 사랑' },
+        'zh-CN': { texto: '给我一个机会好吗？', sim: '好的', nao: '不要', nome: '简体中文', tituloPagina: '给我一个机会好吗？', descricao: '一个浪漫的页面。', palavrasChave: '浪漫, 互动, 挑战, 表情符号, 有趣, 爱' },
+        'zh-TW': { texto: '畀個機會我好嗎？', sim: '好', nao: '不要', nome: '繁體中文', tituloPagina: '畀個機會我好嗎？', descricao: '一個浪漫的頁面。', palavrasChave: '浪漫, 互動, 挑戰, 表情符號, 有趣, 愛' },
+        'vi': { texto: 'Cho anh/em một cơ hội nhé?', sim: 'CÓ', nao: 'KHÔNG', nome: 'Tiếng Việt', tituloPagina: 'Cho anh/em một cơ hội nhé?', descricao: 'Một trang dành cho người lãng mạn.', palavrasChave: 'lãng mạn, tương tác, thử thách, biểu tượng cảm xúc, vui vẻ, tình yêu' },
+        'th': { texto: 'ให้โอกาสฉันหน่อยได้ไหม?', sim: 'ใช่', nao: 'ไม่', nome: 'ไทย', tituloPagina: 'ให้โอกาสฉันหน่อยได้ไหม?', descricao: 'หน้าเว็บสำหรับคนโรแมนติก', palavrasChave: 'โรแมนติก, โต้ตอบ, ท้าทาย, อีโมจิ, สนุก, รัก' },
+        'tl': { texto: 'Bigyan mo naman ako ng pagkakataon?', sim: 'OO', nao: 'HINDI', nome: 'Tagalog', tituloPagina: 'Bigyan mo naman ako ng pagkakataon?', descricao: 'Isang pahina para sa mga romantiko.', palavrasChave: 'romantiko, interaktibo, hamon, emojis, masaya, pag-ibig' },
+        'hi': { texto: 'क्या मुझे एक मौका दोगे?', sim: 'हाँ', nao: 'नहीं', nome: 'हिन्दी', tituloPagina: 'क्या मुझे एक मौका दोगे?', descricao: 'रोमांटिक लोगों के लिए एक पृष्ठ।', palavrasChave: 'रोमांटिक, इंटरैक्टिव, चुनौती, इमोजी, मज़ा, प्यार' },
+        'ar': { texto: 'ممكن تديني فرصة؟', sim: 'نعم', nao: 'لا', nome: 'العربية', tituloPagina: 'ممكن تديني فرصة؟', descricao: 'صفحة للرومانسيين.', palavrasChave: 'رومانسي, تفاعلي, تحدي, رموز تعبيرية, ممتع, حب' },
+        'he': { texto: 'תיתן/תתני לי הזדמנות?', sim: 'כן', nao: 'לא', nome: 'עברית', tituloPagina: 'תיתן/תתני לי הזדמנות?', descricao: 'עמוד לרומנטיקנים.', palavrasChave: 'רומנטי, אינטראקטיבי, אתגר, אימוג'י, כיף, אהבה' },
+        'tr': { texto: 'Bana bir şans verir misin?', sim: 'EVET', nao: 'HAYIR', nome: 'Türkçe', tituloPagina: 'Bana bir şans verir misin?', descricao: 'Romantikler için bir sayfa.', palavrasChave: 'romantik, etkileşimli, meydan okuma, emojiler, eğlenceli, aşk' },
+        'fa': { texto: 'یه فرصت بهم میدی؟', sim: 'بله', nao: 'نه', nome: 'فارسی', tituloPagina: 'یه فرصت بهم میدی؟', descricao: 'صفحه‌ای برای رمانتیک‌ها.', palavrasChave: 'رمانتیک, تعاملی, چالش, ایموجی, سرگرم‌کننده, عشق' },
+        'sw': { texto: 'Unipe nafasi?', sim: 'NDIYO', nao: 'HAPANA', nome: 'Kiswahili', tituloPagina: 'Unipe nafasi?', descricao: 'Ukurasa kwa wapenzi.', palavrasChave: 'kimapenzi, ingilishi, changamoto, emoji, furaha, upendo' },
+        'sv': { texto: 'Ger du mig en chans?', sim: 'JA', nao: 'NEJ', nome: 'Svenska', tituloPagina: 'Ger du mig en chans?', descricao: 'En sida för romantiker.', palavrasChave: 'romantisk, interaktiv, utmaning, emojis, roligt, kärlek' },
+        'no': { texto: 'Gir du meg en sjanse?', sim: 'JA', nao: 'NEI', nome: 'Norsk', tituloPagina: 'Gir du meg en sjanse?', descricao: 'En side for romantikere.', palavrasChave: 'romantisk, interaktiv, utfordring, emojier, gøy, kjærlighet' },
+        'da': { texto: 'Giver du mig en chance?', sim: 'JA', nao: 'NEJ', nome: 'Dansk', tituloPagina: 'Giver du mig en chance?', descricao: 'En side for romantikere.', palavrasChave: 'romantisk, interaktiv, udfordring, emojier, sjov, kærlighed' },
+        'fi': { texto: 'Annatko minulle mahdollisuuden?', sim: 'KYLLÄ', nao: 'EI', nome: 'Suomi', tituloPagina: 'Annatko minulle mahdollisuuden?', descricao: 'Sivu romantikoille.', palavrasChave: 'romanttinen, interaktiivinen, haaste, emojit, hauska, rakkaus' }
     };
 
     const LANG_MAP = {
@@ -298,6 +298,24 @@
         if (traducao) {
             // Atualiza o título da página
             document.title = traducao.tituloPagina || traducao.texto;
+            
+            // Atualiza meta tags SEO
+            const metaDescription = document.querySelector('meta[name="description"]');
+            const metaKeywords = document.querySelector('meta[name="keywords"]');
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const ogDescription = document.querySelector('meta[property="og:description"]');
+            const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+            const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+            
+            if (metaDescription) metaDescription.content = traducao.descricao || traducao.texto;
+            if (metaKeywords) metaKeywords.content = traducao.palavrasChave || '';
+            if (ogTitle) ogTitle.content = traducao.tituloPagina || traducao.texto;
+            if (ogDescription) ogDescription.content = traducao.descricao || traducao.texto;
+            if (twitterTitle) twitterTitle.content = traducao.tituloPagina || traducao.texto;
+            if (twitterDescription) twitterDescription.content = traducao.descricao || traducao.texto;
+            
+            // Atualiza o HTML lang
+            document.documentElement.lang = codigo;
             
             titulo.innerHTML = `<span>${traducao.texto}</span>`;
             btnSim.textContent = `${traducao.sim}`;
