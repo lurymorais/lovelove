@@ -49,7 +49,7 @@ Español
 
 # 💖 ¿Me das una oportunidad?
 
-Página interactiva donde el botón NO huye del cursor y SÍ libera emojis.
+Para los románticos que quieren invitar a alguien a salir.
 
 ## Características
 
