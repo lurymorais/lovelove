@@ -3,38 +3,38 @@
 
     // ===== TRADUÇÕES =====
     const TRADUCOES = {
-        'pt': { texto: 'Me dá uma chance?', sim: 'SIM', nao: 'NÃO', nome: 'Português (Brasil)' },
-        'en': { texto: 'Give me a chance?', sim: 'YES', nao: 'NO', nome: 'English' },
-        'es': { texto: '¿Me das una oportunidad?', sim: 'SÍ', nao: 'NO', nome: 'Español' },
-        'fr': { texto: 'Donne-moi une chance ?', sim: 'OUI', nao: 'NON', nome: 'Français' },
-        'it': { texto: 'Mi dai una possibilità?', sim: 'SÌ', nao: 'NO', nome: 'Italiano' },
-        'ro': { texto: 'Îmi dai o șansă?', sim: 'DA', nao: 'NU', nome: 'Română' },
-        'de': { texto: 'Gibst du mir eine Chance?', sim: 'JA', nao: 'NEIN', nome: 'Deutsch' },
-        'nl': { texto: 'Geef je me een kans?', sim: 'JA', nao: 'NEE', nome: 'Nederlands' },
-        'ru': { texto: 'Дашь мне шанс?', sim: 'ДА', nao: 'НЕТ', nome: 'Русский' },
-        'uk': { texto: 'Даси мені шанс?', sim: 'ТАК', nao: 'НІ', nome: 'Українська' },
-        'pl': { texto: 'Dasz mi szansę?', sim: 'TAK', nao: 'NIE', nome: 'Polski' },
-        'cs': { texto: 'Dáš mi šanci?', sim: 'ANO', nao: 'NE', nome: 'Čeština' },
-        'bg': { texto: 'Ще ми дадеш ли шанс?', sim: 'ДА', nao: 'НЕ', nome: 'Български' },
-        'hr': { texto: 'Daš mi šansu?', sim: 'DA', nao: 'NE', nome: 'Hrvatski' },
-        'el': { texto: 'Μου δίνεις μια ευκαιρία;', sim: 'ΝΑΙ', nao: 'ΟΧΙ', nome: 'Ελληνικά' },
-        'ja': { texto: 'チャンスをくれない？', sim: 'はい', nao: 'いいえ', nome: '日本語' },
-        'ko': { texto: '나한테 기회를 줄래?', sim: '네', nao: '아니오', nome: '한국어' },
-        'zh-CN': { texto: '给我一个机会好吗？', sim: '好的', nao: '不要', nome: '简体中文' },
-        'zh-TW': { texto: '畀個機會我好嗎？', sim: '好', nao: '不要', nome: '繁體中文' },
-        'vi': { texto: 'Cho anh/em một cơ hội nhé?', sim: 'CÓ', nao: 'KHÔNG', nome: 'Tiếng Việt' },
-        'th': { texto: 'ให้โอกาสฉันหน่อยได้ไหม?', sim: 'ใช่', nao: 'ไม่', nome: 'ไทย' },
-        'tl': { texto: 'Bigyan mo naman ako ng pagkakataon?', sim: 'OO', nao: 'HINDI', nome: 'Tagalog' },
-        'hi': { texto: 'क्या मुझे एक मौका दोगे?', sim: 'हाँ', nao: 'नहीं', nome: 'हिन्दी' },
-        'ar': { texto: 'ممكن تديني فرصة؟', sim: 'نعم', nao: 'لا', nome: 'العربية' },
-        'he': { texto: 'תיתן/תתני לי הזדמנות?', sim: 'כן', nao: 'לא', nome: 'עברית' },
-        'tr': { texto: 'Bana bir şans verir misin?', sim: 'EVET', nao: 'HAYIR', nome: 'Türkçe' },
-        'fa': { texto: 'یه فرصت بهم میدی؟', sim: 'بله', nao: 'نه', nome: 'فارسی' },
-        'sw': { texto: 'Unipe nafasi?', sim: 'NDIYO', nao: 'HAPANA', nome: 'Kiswahili' },
-        'sv': { texto: 'Ger du mig en chans?', sim: 'JA', nao: 'NEJ', nome: 'Svenska' },
-        'no': { texto: 'Gir du meg en sjanse?', sim: 'JA', nao: 'NEI', nome: 'Norsk' },
-        'da': { texto: 'Giver du mig en chance?', sim: 'JA', nao: 'NEJ', nome: 'Dansk' },
-        'fi': { texto: 'Annatko minulle mahdollisuuden?', sim: 'KYLLÄ', nao: 'EI', nome: 'Suomi' }
+        'pt': { texto: 'Me dá uma chance?', sim: 'SIM', nao: 'NÃO', nome: 'Português (Brasil)', tituloPagina: 'Me dá uma chance?' },
+        'en': { texto: 'Give me a chance?', sim: 'YES', nao: 'NO', nome: 'English', tituloPagina: 'Give me a chance?' },
+        'es': { texto: '¿Me das una oportunidad?', sim: 'SÍ', nao: 'NO', nome: 'Español', tituloPagina: '¿Me das una oportunidad?' },
+        'fr': { texto: 'Donne-moi une chance ?', sim: 'OUI', nao: 'NON', nome: 'Français', tituloPagina: 'Donne-moi une chance ?' },
+        'it': { texto: 'Mi dai una possibilità?', sim: 'SÌ', nao: 'NO', nome: 'Italiano', tituloPagina: 'Mi dai una possibilità?' },
+        'ro': { texto: 'Îmi dai o șansă?', sim: 'DA', nao: 'NU', nome: 'Română', tituloPagina: 'Îmi dai o șansă?' },
+        'de': { texto: 'Gibst du mir eine Chance?', sim: 'JA', nao: 'NEIN', nome: 'Deutsch', tituloPagina: 'Gibst du mir eine Chance?' },
+        'nl': { texto: 'Geef je me een kans?', sim: 'JA', nao: 'NEE', nome: 'Nederlands', tituloPagina: 'Geef je me een kans?' },
+        'ru': { texto: 'Дашь мне шанс?', sim: 'ДА', nao: 'НЕТ', nome: 'Русский', tituloPagina: 'Дашь мне шанс?' },
+        'uk': { texto: 'Даси мені шанс?', sim: 'ТАК', nao: 'НІ', nome: 'Українська', tituloPagina: 'Даси мені шанс?' },
+        'pl': { texto: 'Dasz mi szansę?', sim: 'TAK', nao: 'NIE', nome: 'Polski', tituloPagina: 'Dasz mi szansę?' },
+        'cs': { texto: 'Dáš mi šanci?', sim: 'ANO', nao: 'NE', nome: 'Čeština', tituloPagina: 'Dáš mi šanci?' },
+        'bg': { texto: 'Ще ми дадеш ли шанс?', sim: 'ДА', nao: 'НЕ', nome: 'Български', tituloPagina: 'Ще ми дадеш ли шанс?' },
+        'hr': { texto: 'Daš mi šansu?', sim: 'DA', nao: 'NE', nome: 'Hrvatski', tituloPagina: 'Daš mi šansu?' },
+        'el': { texto: 'Μου δίνεις μια ευκαιρία;', sim: 'ΝΑΙ', nao: 'ΟΧΙ', nome: 'Ελληνικά', tituloPagina: 'Μου δίνεις μια ευκαιρία;' },
+        'ja': { texto: 'チャンスをくれない？', sim: 'はい', nao: 'いいえ', nome: '日本語', tituloPagina: 'チャンスをくれない？' },
+        'ko': { texto: '나한테 기회를 줄래?', sim: '네', nao: '아니오', nome: '한국어', tituloPagina: '나한테 기회를 줄래?' },
+        'zh-CN': { texto: '给我一个机会好吗？', sim: '好的', nao: '不要', nome: '简体中文', tituloPagina: '给我一个机会好吗？' },
+        'zh-TW': { texto: '畀個機會我好嗎？', sim: '好', nao: '不要', nome: '繁體中文', tituloPagina: '畀個機會我好嗎？' },
+        'vi': { texto: 'Cho anh/em một cơ hội nhé?', sim: 'CÓ', nao: 'KHÔNG', nome: 'Tiếng Việt', tituloPagina: 'Cho anh/em một cơ hội nhé?' },
+        'th': { texto: 'ให้โอกาสฉันหน่อยได้ไหม?', sim: 'ใช่', nao: 'ไม่', nome: 'ไทย', tituloPagina: 'ให้โอกาสฉันหน่อยได้ไหม?' },
+        'tl': { texto: 'Bigyan mo naman ako ng pagkakataon?', sim: 'OO', nao: 'HINDI', nome: 'Tagalog', tituloPagina: 'Bigyan mo naman ako ng pagkakataon?' },
+        'hi': { texto: 'क्या मुझे एक मौका दोगे?', sim: 'हाँ', nao: 'नहीं', nome: 'हिन्दी', tituloPagina: 'क्या मुझे एक मौका दोगे?' },
+        'ar': { texto: 'ممكن تديني فرصة؟', sim: 'نعم', nao: 'لا', nome: 'العربية', tituloPagina: 'ممكن تديني فرصة؟' },
+        'he': { texto: 'תיתן/תתני לי הזדמנות?', sim: 'כן', nao: 'לא', nome: 'עברית', tituloPagina: 'תיתן/תתני לי הזדמנות?' },
+        'tr': { texto: 'Bana bir şans verir misin?', sim: 'EVET', nao: 'HAYIR', nome: 'Türkçe', tituloPagina: 'Bana bir şans verir misin?' },
+        'fa': { texto: 'یه فرصت بهم میدی؟', sim: 'بله', nao: 'نه', nome: 'فارسی', tituloPagina: 'یه فرصت بهم میدی؟' },
+        'sw': { texto: 'Unipe nafasi?', sim: 'NDIYO', nao: 'HAPANA', nome: 'Kiswahili', tituloPagina: 'Unipe nafasi?' },
+        'sv': { texto: 'Ger du mig en chans?', sim: 'JA', nao: 'NEJ', nome: 'Svenska', tituloPagina: 'Ger du mig en chans?' },
+        'no': { texto: 'Gir du meg en sjanse?', sim: 'JA', nao: 'NEI', nome: 'Norsk', tituloPagina: 'Gir du meg en sjanse?' },
+        'da': { texto: 'Giver du mig en chance?', sim: 'JA', nao: 'NEJ', nome: 'Dansk', tituloPagina: 'Giver du mig en chance?' },
+        'fi': { texto: 'Annatko minulle mahdollisuuden?', sim: 'KYLLÄ', nao: 'EI', nome: 'Suomi', tituloPagina: 'Annatko minulle mahdollisuuden?' }
     };
 
     const LANG_MAP = {
@@ -296,6 +296,9 @@
         idiomaAtual = codigo;
         const traducao = TRADUCOES[codigo];
         if (traducao) {
+            // Atualiza o título da página
+            document.title = traducao.tituloPagina || traducao.texto;
+            
             titulo.innerHTML = `<span>${traducao.texto}</span>`;
             btnSim.textContent = `${traducao.sim}`;
             if (btnNaoInicial && !primeiraFuga) {
