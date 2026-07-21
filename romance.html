@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Meta tags para SEO -->
-<title>Me dá uma chance?</title>
-<meta name="description" content="Uma página para os românticos">
-<meta name="keywords" content="romântico, interativo, desafio, emojis, divertido, amor">
-<meta name="author" content="Lury Morais">
-<meta name="robots" content="index, follow">
+    
+    <!-- SEO -->
+    <title>Me dá uma chance?</title>
+    <meta name="description" content="Uma página para os românticos">
+    <meta name="keywords" content="romântico, interativo, desafio, emojis, divertido, amor">
+    <meta name="author" content="Lury Morais">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon com coração rosa -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Me dá uma chance?">
+    <meta property="og:description" content="Uma página para os românticos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://revistacarnaubais.com.br/romance.html">
+    <meta property="og:image" content="https://emojicdn.elk.sh/💗?size=1200x630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Me dá uma chance?">
+    <meta name="twitter:description" content="Página interativa romântica">
+    <meta name="twitter:image" content="https://emojicdn.elk.sh/💗?size=1200x630">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://revistacarnaubais.com.br/romance.html">
+    
+    <!-- Idiomas alternativos -->
+    <link rel="alternate" hreflang="pt" href="https://revistacarnaubais.com.br/romance.html?lang=pt">
+    <link rel="alternate" hreflang="en" href="https://revistacarnaubais.com.br/romance.html?lang=en">
+    <link rel="alternate" hreflang="es" href="https://revistacarnaubais.com.br/romance.html?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://revistacarnaubais.com.br/romance.html">
 
-<!-- Open Graph para compartilhamento -->
-<meta property="og:title" content="Me dá uma chance?">
-<meta property="og:description" content="Uma página para os românticos.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://revistacarnaubais.com.br/romance.html">
-<meta property="og:image" content="https://seu-site.com/og-image.jpg">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Me dá uma chance?">
-<meta name="twitter:description" content="Página interativa romântica">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://revistacarnaubais.com.br/romance.html">
-
-<!-- Idioma alternativo -->
-<link rel="alternate" hreflang="pt" href="https://revistacarnaubais.com.br/romance.html?lang=pt">
-<link rel="alternate" hreflang="en" href="https://revistacarnaubais.com.br/romance.html?lang=en">
-<link rel="alternate" hreflang="es" href="https://revistacarnaubais.com.br/romance.html?lang=es">
-<link rel="alternate" hreflang="x-default" href="https://revistacarnaubais.com.br/romance.html">
     <style>
         * {
             margin: 0;
@@ -761,6 +768,19 @@
         padding: 10px;
     }
 }
+
+/* Estado inicial do botão NÃO - ao lado do SIM */
+.btn-nao.inicial {
+    position: relative !important;
+    display: inline-flex !important;
+    z-index: 2 !important;
+    animation: bounceIn 0.6s ease-out 0.5s both;
+    /* Remove fixed positioning */
+    left: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+}
+
     </style>
 </head>
 <body>
@@ -771,6 +791,7 @@
 
         <div class="botoes" id="botoesContainer">
             <button class="btn btn-sim" id="btnSim">😍 SIM</button>
+    	    <button class="btn btn-nao inicial" id="btnNaoInicial">NÃO</button>
         </div>
     </div>
 
@@ -794,7 +815,7 @@
     <div class="lang-menu" id="langMenu"></div>
 
 <!-- Botão do Repositório -->
-<button class="repo-btn" id="repoBtn" aria-label="Repositório">
+<a href="https://github.com/lurymorais/lovelove" target="_blank" class="repo-btn" aria-label="Repositório">
     <svg viewBox="0 0 973.1 973.1" xmlns="http://www.w3.org/2000/svg">
         <g>
             <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9
@@ -807,7 +828,7 @@
                 c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z"/>
         </g>
     </svg>
-</button>
+</a>
 
 
     <script>
@@ -884,22 +905,87 @@ const TRADUCOES = {
                 'fi': 'fi', 'fi-FI': 'fi'
             };
 
-            // ===== ELEMENTOS =====
-            const titulo = document.getElementById('titulo');
-            const btnSim = document.getElementById('btnSim');
-            const emojiContainer = document.getElementById('emojiContainer');
-            const muteBtn = document.getElementById('muteBtn');
-            const langBtn = document.getElementById('langBtn');
-            const langMenu = document.getElementById('langMenu');
-            const body = document.body;
-            let btnNao = null;
-            let audioContext = null;
-            let estaBloqueado = false;
-            let overlay = null;
-            let isMuted = false;
-            let audiosAtivos = [];
-            let idiomaAtual = 'pt';
-            let langMenuAberto = false;
+// ===== ELEMENTOS =====
+const titulo = document.getElementById('titulo');
+const btnSim = document.getElementById('btnSim');
+const btnNaoInicial = document.getElementById('btnNaoInicial');
+const emojiContainer = document.getElementById('emojiContainer');
+const muteBtn = document.getElementById('muteBtn');
+const langBtn = document.getElementById('langBtn');
+const langMenu = document.getElementById('langMenu');
+const body = document.body;
+let btnNao = null;
+let primeiraFuga = false;
+let audioContext = null;
+let estaBloqueado = false;
+let overlay = null;
+let isMuted = false;
+let audiosAtivos = [];
+let idiomaAtual = 'pt';
+let langMenuAberto = false;
+
+// ===== BOTÃO NÃO =====
+function criarBotaoNao(comAnimacao) {
+    if (btnNao) {
+        btnNao.remove();
+        btnNao = null;
+    }
+
+    const novoBtn = document.createElement('button');
+    novoBtn.className = 'btn-nao';
+    if (comAnimacao === false) {
+        novoBtn.classList.add('sem-animacao');
+    }
+    // Usa a tradução atual para o texto do botão
+    novoBtn.textContent = traducaoAtual ? traducaoAtual.nao : 'NÃO';
+    novoBtn.setAttribute('tabindex', '-1');
+    novoBtn.style.zIndex = '9999';
+
+    posicionarBotao(novoBtn);
+
+    novoBtn.addEventListener('mouseenter', function(e) {
+        criarBotaoNao(false);
+    });
+
+    novoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (!estaBloqueado) criarBotaoNao(false);
+    });
+
+    novoBtn.addEventListener('mousedown', function(e) {
+        e.preventDefault();
+        if (!estaBloqueado) criarBotaoNao(false);
+    });
+
+    document.body.appendChild(novoBtn);
+    btnNao = novoBtn;
+}
+
+
+// ===== BOTÃO NÃO INICIAL =====
+function ativarFuga() {
+    if (primeiraFuga) return;
+    primeiraFuga = true;
+    
+    // Remove o botão inicial
+    if (btnNaoInicial) {
+        btnNaoInicial.remove();
+    }
+    
+    // Cria o botão fugitivo
+    criarBotaoNao(true);
+}
+
+btnNaoInicial.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    ativarFuga();
+});
+
+btnNaoInicial.addEventListener('mouseenter', function(e) {
+    ativarFuga();
+});
 
             // ===== LISTAS DE EMOJIS =====
             const emojis = ['😍','😘','🥰','😏','😈','👻','😻','😽','🙏','🎉','🍆','🍑','🌹','🌚','💞','💘','💖'];
@@ -912,9 +998,9 @@ const TRADUCOES = {
             const CHANCE_RARO = 0.06;
 
             const AUDIOS_PRE_CARREGAR = [
-                'https://cdn.pixabay.com/audio/2025/03/22/audio_a0ad187792.mp3',
-                'https://cdn.pixabay.com/audio/2021/11/23/audio_04abd476d9.mp3',
-                'https://cdn.pixabay.com/audio/2021/08/09/audio_93715f02ac.mp3'
+                'https://revistacarnaubais.com.br/imgs/assets/fogo.mp3',
+                'https://revistacarnaubais.com.br/imgs/assets/beijo.mp3',
+                'https://revistacarnaubais.com.br/imgs/assets/riso.mp3'
             ];
 
             function preCarregarAudios() {
@@ -989,19 +1075,19 @@ function aplicarIdioma(codigo) {
     const traducao = TRADUCOES[codigo];
     if (traducao) {
         titulo.innerHTML = `<span>${traducao.texto}</span>`;
-        // Atualiza o botão SIM
         btnSim.textContent = `${traducao.sim}`;
-        // Atualiza o botão NÃO (quando for recriado)
+        // Atualiza o botão NÃO inicial
+        if (btnNaoInicial && !primeiraFuga) {
+            btnNaoInicial.textContent = traducao.nao;
+        }
         if (btnNao) {
             btnNao.textContent = traducao.nao;
         }
-        // Guarda a tradução para usar quando o botão NÃO for recriado
         traducaoAtual = traducao;
     }
     atualizarMenu(codigo);
     try {
         localStorage.setItem('idioma_preferido', codigo);
-        // Atualiza a URL com o parâmetro lang
         const url = new URL(window.location);
         url.searchParams.set('lang', codigo);
         window.history.replaceState({}, '', url);
@@ -1120,7 +1206,7 @@ function atualizarMenu(codigoAtivo) {
                     
                     limparAudios();
                     
-                    const audio1 = criarAudio('https://cdn.pixabay.com/audio/2025/03/22/audio_a0ad187792.mp3', 1);
+                    const audio1 = criarAudio('https://revistacarnaubais.com.br/imgs/assets/fogo.mp3', 1);
                     
                     if (!isMuted) {
                         audio1.play().catch(() => {});
@@ -1144,8 +1230,8 @@ function atualizarMenu(codigoAtivo) {
                     
                     limparAudios();
                     
-                    const audio1 = criarAudio('https://cdn.pixabay.com/audio/2021/11/23/audio_04abd476d9.mp3');
-                    const audio2 = criarAudio('https://cdn.pixabay.com/audio/2021/08/09/audio_93715f02ac.mp3');
+                    const audio1 = criarAudio('https://revistacarnaubais.com.br/imgs/assets/beijo.mp3');
+                    const audio2 = criarAudio('https://revistacarnaubais.com.br/imgs/assets/riso.mp3');
                     
                     if (!isMuted) {
                         audio1.play().catch(() => {});
@@ -1237,44 +1323,6 @@ function atualizarMenu(codigoAtivo) {
                     }, i * 60);
                 }
             }
-
-            // ===== BOTÃO NÃO =====
-function criarBotaoNao(comAnimacao) {
-    if (btnNao) {
-        btnNao.remove();
-        btnNao = null;
-    }
-
-    const novoBtn = document.createElement('button');
-    novoBtn.className = 'btn-nao';
-    if (comAnimacao === false) {
-        novoBtn.classList.add('sem-animacao');
-    }
-    // Usa a tradução atual para o texto do botão
-    novoBtn.textContent = traducaoAtual ? traducaoAtual.nao : 'NÃO';
-    novoBtn.setAttribute('tabindex', '-1');
-    novoBtn.style.zIndex = '9999';
-
-    posicionarBotao(novoBtn);
-
-    novoBtn.addEventListener('mouseenter', function(e) {
-        criarBotaoNao(false);
-    });
-
-    novoBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (!estaBloqueado) criarBotaoNao(false);
-    });
-
-    novoBtn.addEventListener('mousedown', function(e) {
-        e.preventDefault();
-        if (!estaBloqueado) criarBotaoNao(false);
-    });
-
-    document.body.appendChild(novoBtn);
-    btnNao = novoBtn;
-}
 
             function posicionarBotao(botao) {
                 const winWidth = window.innerWidth;
@@ -1414,7 +1462,6 @@ window.addEventListener('load', function() {
     
     traducaoAtual = TRADUCOES[idioma] || TRADUCOES['pt'];
     aplicarIdioma(idioma);
-    criarBotaoNao(true);
 });
 
             window.addEventListener('beforeunload', function() {
@@ -1422,12 +1469,6 @@ window.addEventListener('load', function() {
             });
 
         })();
-
-// Botão de interrogação -?-
-const repoBtn = document.getElementById('repoBtn');
-repoBtn.addEventListener('click', function() {
-    window.open('https://github.com/lurymorais/lovelove', '_blank');
-});
 
 </script>
 </body>
