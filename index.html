@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Me dá uma chance?</title>
+    <meta name="description" content="Uma página para os românticos">
+    <meta name="keywords" content="romântico, interativo, desafio, emojis, divertido, amor">
+    <meta name="author" content="Lury Morais">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Me dá uma chance?">
+    <meta property="og:description" content="Uma página para os românticos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://revistacarnaubais.com.br/romance.html">
+    <meta property="og:image" content="https://emojicdn.elk.sh/💗?size=1200x630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Me dá uma chance?">
+    <meta name="twitter:description" content="Página interativa romântica">
+    <meta name="twitter:image" content="https://emojicdn.elk.sh/💗?size=1200x630">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://revistacarnaubais.com.br/romance.html">
+    
+    <!-- Idiomas alternativos -->
+    <link rel="alternate" hreflang="pt" href="https://revistacarnaubais.com.br/romance.html?lang=pt">
+    <link rel="alternate" hreflang="en" href="https://revistacarnaubais.com.br/romance.html?lang=en">
+    <link rel="alternate" hreflang="es" href="https://revistacarnaubais.com.br/romance.html?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://revistacarnaubais.com.br/romance.html">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+<body>
+    <div class="card" role="main">
+        <h1 class="titulo" id="titulo">
+            <span>Me dá uma chance?</span>
+        </h1>
+
+        <div class="botoes" id="botoesContainer">
+            <button class="btn btn-sim" id="btnSim">😍 SIM</button>
+    	    <button class="btn btn-nao inicial" id="btnNaoInicial">NÃO</button>
+        </div>
+    </div>
+
+    <div class="emoji-rain" id="emojiContainer"></div>
+
+    <!-- Botão Mute -->
+    <button class="mute-btn" id="muteBtn" aria-label="Alternar som">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="M281.817,0L166.206,115.613H52.595v280.774h113.61L281.817,512h51.552V0H281.817z M283.82,443.932l-97.093-97.093h-84.584
+                    V165.161h84.584l97.093-97.093V443.932z"/>
+            </g>
+            <g>
+                <path d="M408.694,133.374l-35.036,35.036c48.297,48.298,48.297,126.884,0,175.18l35.036,35.036
+                    C476.309,311.01,476.309,200.99,408.694,133.374z"/>
+            </g>
+        </svg>
+    </button>
+
+    <!-- Botão Idioma -->
+    <button class="lang-btn" id="langBtn">A 文</button>
+
+    <!-- Menu de Idiomas -->
+    <div class="lang-menu" id="langMenu"></div>
+
+    <!-- Botão Repositório -->
+    <a href="https://github.com/lurymorais/lovelove" target="_blank" class="repo-btn" aria-label="Repositório">
+        <svg viewBox="0 0 973.1 973.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9
+                    C562.29,815,535.391,788.199,502.29,788.199z"/>
+                <path d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40
+                    c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9
+                    c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49
+                    c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1
+                    C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1
+                    c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z"/>
+            </g>
+        </svg>
+    </a>
+
+    <!-- Botão Compartilhar -->
+    <button class="share-btn" id="shareBtn" aria-label="Compartilhar">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 18.5088C1 13.1679 4.90169 8.77098 9.99995 7.84598V5.51119C9.99995 3.63887 12.1534 2.58563 13.6313 3.73514L21.9742 10.224C23.1323 11.1248 23.1324 12.8752 21.9742 13.7761L13.6314 20.2649C12.1534 21.4144 10 20.3612 10 18.4888V16.5189C7.74106 16.9525 5.9625 18.1157 4.92778 19.6838C4.33222 20.5863 3.30568 20.7735 2.55965 20.5635C1.80473 20.3511 1.00011 19.6306 1 18.5088ZM12.4034 5.31385C12.2392 5.18613 11.9999 5.30315 11.9999 5.51119V9.41672C11.9999 9.55479 11.8873 9.66637 11.7493 9.67008C8.09094 9.76836 4.97774 12.0115 3.66558 15.1656C3.46812 15.6402 3.31145 16.1354 3.19984 16.6471C3.07554 17.217 3.00713 17.8072 3.00053 18.412C3.00018 18.4442 3 18.4765 3 18.5088C3.00001 18.6437 3.18418 18.6948 3.25846 18.5822C3.27467 18.5577 3.29101 18.5332 3.30747 18.5088C3.30748 18.5088 3.30746 18.5088 3.30747 18.5088C3.63446 18.0244 4.01059 17.5765 4.42994 17.168C4.71487 16.8905 5.01975 16.6313 5.34276 16.3912C7.05882 15.1158 9.28642 14.3823 11.7496 14.3357C11.8877 14.3331 12 14.4453 12 14.5834V18.4888C12 18.6969 12.2393 18.8139 12.4035 18.6862L20.7463 12.1973C20.875 12.0973 20.875 11.9028 20.7463 11.8027L12.4034 5.31385Z" fill="#0F1729"/>
+        </svg>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <button class="modal-fechar" id="modalFechar">✕</button>
+            
+            <div class="modal-pessoas">
+                <svg class="pessoa1" viewBox="-3 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.517 12.834v1.9a1.27 1.27 0 0 1-1.267 1.267h-9.5a1.27 1.27 0 0 1-1.267-1.267v-1.9A3.176 3.176 0 0 1 3.65 9.667h5.7a3.176 3.176 0 0 1 3.167 3.167zM3.264 5.48A3.236 3.236 0 1 1 6.5 8.717a3.236 3.236 0 0 1-3.236-3.236z"/>
+                </svg>
+                
+                <div class="modal-carta-wrapper">
+                    <div class="modal-carta">💌</div>
+                </div>
+                
+                <svg class="pessoa2" viewBox="-3 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.517 12.834v1.9a1.27 1.27 0 0 1-1.267 1.267h-9.5a1.27 1.27 0 0 1-1.267-1.267v-1.9A3.176 3.176 0 0 1 3.65 9.667h5.7a3.176 3.176 0 0 1 3.167 3.167zM3.264 5.48A3.236 3.236 0 1 1 6.5 8.717a3.236 3.236 0 0 1-3.236-3.236z"/>
+                </svg>
+            </div>
+            
+            <div class="modal-link">
+                <input type="text" id="modalLinkInput" readonly>
+            </div>
+            
+            <div class="modal-btn-wrapper">
+                <button class="modal-btn-copiar" id="modalBtnCopiar">
+                    <svg class="copy" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 15H5C3.89543 15 3 14.1046 3 13V5C3 3.89543 3.89543 3 5 3H13C14.1046 3 15 3.89543 15 5V9M11 21H19C20.1046 21 21 20.1046 21 19V11C21 9.89543 20.1046 9 19 9H11C9.89543 9 9 9.89543 9 11V19C9 20.1046 9.89543 21 11 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 13L9 17L19 7" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
