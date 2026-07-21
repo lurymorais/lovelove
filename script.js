@@ -159,11 +159,19 @@
 
     // ===== BOTÃO NÃO =====
     function criarBotaoNao(comAnimacao) {
+        // Remove o botão inicial se ele ainda existir
+        if (btnNaoInicial && btnNaoInicial.parentNode) {
+            btnNaoInicial.remove();
+            // Marca que a fuga já foi ativada
+            primeiraFuga = true;
+        }
+        
+        // Remove o botão existente
         if (btnNao) {
             btnNao.remove();
             btnNao = null;
         }
-
+    
         const novoBtn = document.createElement('button');
         novoBtn.className = 'btn-nao';
         if (comAnimacao === false) {
@@ -172,24 +180,24 @@
         novoBtn.textContent = traducaoAtual ? traducaoAtual.nao : 'NÃO';
         novoBtn.setAttribute('tabindex', '-1');
         novoBtn.style.zIndex = '9999';
-
+    
         posicionarBotao(novoBtn);
-
+    
         novoBtn.addEventListener('mouseenter', function(e) {
             criarBotaoNao(false);
         });
-
+    
         novoBtn.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
             if (!estaBloqueado) criarBotaoNao(false);
         });
-
+    
         novoBtn.addEventListener('mousedown', function(e) {
             e.preventDefault();
             if (!estaBloqueado) criarBotaoNao(false);
         });
-
+    
         document.body.appendChild(novoBtn);
         btnNao = novoBtn;
     }
