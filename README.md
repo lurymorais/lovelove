@@ -22,7 +22,7 @@ Feito com 💕 por Lury Morais © 2026
 
 ---
 
- 🇺🇸 English
+ English
 # 💖 Give me a chance?
 
 For romantics who want to ask someone out on a date
@@ -42,3 +42,29 @@ For romantics who want to ask someone out on a date
 GNU General Public License v3.0
 
 Made with 💕 by Lury Morais © 2026
+
+---
+
+Español
+
+# 💖 ¿Me das una oportunidad?
+
+Página interactiva donde el botón NO huye del cursor y SÍ libera emojis.
+
+## Características
+
+- Botones SÍ y NO
+- Imposible hacer clic en NO
+- Emojis que saltan al hacer clic en SÍ
+- Emojis especiales 🫦❤️‍🔥 con temas y audios
+- 32 idiomas soportados
+- Control de audio
+- Responsivo
+
+## Licencia
+
+GNU General Public License v3.0
+
+---
+
+Hecho con 💕 por Lury Morais © 2026
