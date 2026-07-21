@@ -9,7 +9,7 @@ Para os românticos que querem chamar alguém para um encontro
 - Impossível clicar no NÃO
 - Emojis que saltam ao clicar no SIM
 - Emojis especiais 🫦❤️‍🔥 com temas e áudios
-- 32 idiomas suportados
+- +30 idiomas suportados
 - Controle de áudio
 - Responsivo
 
@@ -33,7 +33,7 @@ For romantics who want to ask someone out on a date
 - Impossible to click NO
 - Jumping emojis on YES click
 - Special emojis 🫦❤️‍🔥 with themes and audio
-- 32 languages supported
+- +30 languages supported
 - Audio control
 - Responsive
 
@@ -57,7 +57,7 @@ Para los románticos que quieren invitar a alguien a salir.
 - Imposible hacer clic en NO
 - Emojis que saltan al hacer clic en SÍ
 - Emojis especiales 🫦❤️‍🔥 con temas y audios
-- 32 idiomas soportados
+- +30 idiomas soportados
 - Control de audio
 - Responsivo
 
